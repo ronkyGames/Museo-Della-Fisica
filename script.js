@@ -1,7 +1,7 @@
 const path = window.location.pathname
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
 console.log(page)
-fetch("prova.json").then(response =>{
+fetch("json/prova.json").then(response =>{
   if(!response.ok){
     throw new Error("Errore nella richiesta")
   }
@@ -21,3 +21,21 @@ fetch("prova.json").then(response =>{
   }
   }
 })
+
+// Fetch the JSON file
+fetch('json/folderStructure.json')
+  .then(response => response.json())
+  .then(data => {
+    const folderStructureElement = document.getElementById('folderStructure');
+    data.folders.forEach(folder => {
+      const folderElement = document.createElement('div');
+      folderElement.innerHTML = `<strong>${folder.name}</strong>`;
+      folder.files.forEach(file => {
+        const fileElement = document.createElement('div');
+        fileElement.textContent = file.name;
+        folderElement.appendChild(fileElement);
+      });
+      folderStructureElement.appendChild(folderElement);
+    });
+  })
+  .catch(error => console.error('Error loading the folder structure:', error));

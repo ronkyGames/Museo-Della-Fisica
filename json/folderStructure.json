@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "meccanica",
+      "files": [
+        {"name": "experiment1.html"},
+        {"name": "experiment2.html"},
+        {"name": "experiment3.html"}
+      ]
+    },
+    {
+      "name": "termodinamica",
+      "files": [
+        {"name": "experiment1.html"},
+        {"name": "experiment2.html"},
+        {"name": "experiment3.html"}
+      ]
+    }
+  ]
+}
