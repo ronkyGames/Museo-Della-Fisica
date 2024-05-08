@@ -1,7 +1,36 @@
+const href = window.location.href
 const path = window.location.pathname
+const homePage = href.replace(path, "/")
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
-console.log(page)
-fetch("json/prova.json").then(response =>{
+
+let collocation = null
+async function getJson(url) {
+  try {
+    const response = await fetch(url)
+    const data = await response.json()
+    return data // This now waits for the fetch to complete.
+  } catch (error) {
+    console.error('Fetching error:', error)
+  }
+}
+
+async function getDataById(url,id){
+  const data = await getJson(url)
+  const doc = data.find(doc => doc.id === id)
+  
+  return doc
+  
+}
+
+async function getCollocation(id){
+  collocation = await getDataById(`${homePage}json/collocation.json`,
+     id)
+  return collocation
+  
+  
+}
+
+fetch(`${homePage}json/instruments.json`).then(response =>{
   if(!response.ok){
     throw new Error("Errore nella richiesta")
   }
@@ -11,31 +40,24 @@ fetch("json/prova.json").then(response =>{
   const doc = data.find(doc => doc.id === page)
   if(doc){
     const title = doc.title
-    const subtitle = doc.subtitle
-    const content = doc.content
+    const image = `${homePage}images/instruments/${doc.image}`
+    const datation = doc.datation
+    const description = doc.description
+    const material = doc.material
+    const keyword = doc.keyword
+    const collocation = doc.collocation
     document.querySelector("#title").textContent = title
-    document.querySelector("#subtitle").textContent = subtitle
-    document.querySelector("#content").innerHTML = content
+    document.querySelector("#image").innerHTML = `<img src="${image}" alt="${keyword}">`
+    document.querySelector("#datation").textContent = datation
+    document.querySelector("#description").innerHTML = description
+    document.querySelector("#material").textContent = material
+    getCollocation(collocation).then(result =>{
+      
+      document.querySelector("#collocation").textContent = result.name
+    })
+    
   }else{
     document.querySelector("#title").textContent = "Documento non trovato"
   }
   }
 })
-
-// Fetch the JSON file
-fetch('json/folderStructure.json')
-  .then(response => response.json())
-  .then(data => {
-    const folderStructureElement = document.getElementById('folderStructure');
-    data.folders.forEach(folder => {
-      const folderElement = document.createElement('div');
-      folderElement.innerHTML = `<strong>${folder.name}</strong>`;
-      folder.files.forEach(file => {
-        const fileElement = document.createElement('div');
-        fileElement.textContent = file.name;
-        folderElement.appendChild(fileElement);
-      });
-      folderStructureElement.appendChild(folderElement);
-    });
-  })
-  .catch(error => console.error('Error loading the folder structure:', error));

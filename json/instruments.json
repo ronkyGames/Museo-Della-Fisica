@@ -1,0 +1,13 @@
+[
+  {
+    "id": "instrument1.html",
+    "title": "Primo Strumento",
+    "image": "instrument.jpg",
+    "datation": "date",
+    "description": "Descrizione del documento",
+    "material" : "materiale",
+    "keyword" : "parola chiave",
+    "collocation" : 1,
+    "bibliography" : "bibliografia"
+  }
+]
