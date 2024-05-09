@@ -6,5 +6,13 @@
   {
     "id":2,
     "name":"Termodinamica"
+  },
+  {
+    "id":3,
+    "name":"Ottica"
+  },
+  {
+    "id":4,
+    "name":"Elettrostatica"
   }
 ]

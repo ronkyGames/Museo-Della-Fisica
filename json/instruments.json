@@ -9,5 +9,16 @@
     "keyword" : "parola chiave",
     "collocation" : 1,
     "bibliography" : "bibliografia"
+  },
+  {
+    "id": "instrument2.html",
+    "title": "Secondo Strumento",
+    "image": "instrument.jpg",
+    "datation": "date",
+    "description": "Descrizione del documento",
+    "material" : "materiale",
+    "keyword" : "parola chiave",
+    "collocation" : 1,
+    "bibliography" : "bibliografia"
   }
 ]

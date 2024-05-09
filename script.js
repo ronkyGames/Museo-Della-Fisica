@@ -3,7 +3,6 @@ const path = window.location.pathname
 const homePage = href.replace(path, "/")
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
 
-let collocation = null
 async function getJson(url) {
   try {
     const response = await fetch(url)
@@ -22,13 +21,28 @@ async function getDataById(url,id){
   
 }
 
+// get instrument by collocation
+async function getInstrumentsByCollocation(collocation){
+  const data = await getJson(`${homePage}json/instruments.json`)
+  const docs = data.filter(doc => doc.collocation === collocation)
+
+  return docs
+
+}
+
+// get data by id
 async function getCollocation(id){
   collocation = await getDataById(`${homePage}json/collocation.json`,
      id)
-  return collocation
-  
-  
+  return collocation  
 }
+
+getInstrumentsByCollocation(1).then(result=>{
+  for(const element of result){
+    console.log(element)
+  }
+})
+
 
 fetch(`${homePage}json/instruments.json`).then(response =>{
   if(!response.ok){
