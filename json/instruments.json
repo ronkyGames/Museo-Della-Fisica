@@ -1,24 +1,35 @@
 [
   {
-    "id": "instrument1.html",
-    "title": "Primo Strumento",
-    "image": "instrument.jpg",
-    "datation": "date",
-    "description": "Descrizione del documento",
-    "material" : "materiale",
+    "id": "grande-pendolo-di-kater.html",
+    "title": "Grande Pendolo di Kater",
+    "image": "pendolodikater.jpg",
+    "datation": "XIX secolo",
+    "description": "Ideato dal geodeta britannico Henry Kater, lo strumento venne creato come gravimetro allo scopo di misurare l'accelerazione di gravità. Il pendolo consiste in una barra di metallo rigida con due perni, ognuno di essi posizionato vicino all'estremità della barra. Esso possiede sia un peso regolabile che può essre spostato su e giù per la barra, sia un perno registrabile,per regolare periodi di oscillazione. Il peso mobile viene regolato cosicchè il periodo sia uguale al periodo di un pendolo semplice di lunghezza pari alla distanza tra i perni e, a questo punto, è possibile calcolare l'accelerazione di gravità.",
+    "material" : "metallo",
     "keyword" : "parola chiave",
     "collocation" : 1,
-    "bibliography" : "bibliografia"
+    "bibliography" : "/"
   },
   {
-    "id": "instrument2.html",
-    "title": "Secondo Strumento",
-    "image": "instrument.jpg",
-    "datation": "date",
-    "description": "Descrizione del documento",
-    "material" : "materiale",
+    "id": "generatore-di-van-de-graaff.html",
+    "title": "Generatore di Van de Graaff",
+    "image": "generororedivandegraaff.jpg",
+    "datation": "1929",
+    "description": "è un generatore elettrostatico, ideato dal fisico statunitense Robert Jemison Van de Graaff (1901-1967), che permette di accumilare un elevata quantità di carica elettrostatica. è formato da un nastro di materiale isolante teso tra due rulli e mantenuto in rotazione da un motore. il nastro viene caricato per induzione da una serie di punte metalliche poste in prossimità del rullo inferiore e collegate ad un generatore di tensione continua ( ad esempio una batteria). queste cariche vengono poi trasportate, per azione del motore che muove il nastro, all'interno di conduttore di forma sferica , isolato, dove un secondo pettina metallico, collegato elettricamentre alla sfera, le trasferisce sulla superficie di quest'ultima.",
+    "material" : "caucciù,metallo",
     "keyword" : "parola chiave",
-    "collocation" : 1,
+    "collocation" : 4,
+    "bibliography" : "bibliografia"
+  },
+ {
+    "id": "apparecchio-composizione-forze.html",
+    "title": "Apparecchio composizione delle forze",
+    "image": "apparecchioforze.jpg",
+    "datation": "Primo quarto XX secolo",
+    "description": "Questo apparecchio è costituito  da una lavangna riportante alle estremità due carrucole, di diversa altezza. è anche corredato di pesi dotati di gancetti. Esso serve a verificare la regola del parallelogramma per la somma dei vettori facendo scorrere nelle gole delle due carrucole un filo con all'estremità dei pesi sospesi spesso equilibrati da altri agganciati al punto medio del filo stesso. Tracciando sulla lavagna in corrispondenza delle due direzioni assunte dal filo due vettori di lunghezza proporzionale al numero dei pesi la diagonale del parallelogramma risulta lunga un numero di unità uguale al numero di pesi agganciati al punto medio del filo. Su di esso agiscono tre forze di diversa direzione ed intensità tenite in equilibrio dalla risultante delle prime due ottenuta con la regola del parallelogramma. Per invece variare l'angolo tra le forze basta variare l'altezza delle colonnine su cui poggiano le carrucole. ",
+    "material" : "ardesia, ottone",
+    "keyword" : "parola chiave",
+    "collocation" : 5,
     "bibliography" : "bibliografia"
   }
 ]
