@@ -2,6 +2,7 @@
   {
     "id": "grande-pendolo-di-kater.html",
     "title": "Grande Pendolo di Kater",
+    "subtitle": "Il pendolo di Kater è un pendolo reversibile a libera oscillazione ideato nel 1817 dal geodeta britannico Henry Kater.",
     "image": "pendolodikater.jpg",
     "datation": "XIX secolo",
     "description": "Ideato dal geodeta britannico Henry Kater, lo strumento venne creato come gravimetro allo scopo di misurare l'accelerazione di gravità. Il pendolo consiste in una barra di metallo rigida con due perni, ognuno di essi posizionato vicino all'estremità della barra. Esso possiede sia un peso regolabile che può essre spostato su e giù per la barra, sia un perno registrabile,per regolare periodi di oscillazione. Il peso mobile viene regolato cosicchè il periodo sia uguale al periodo di un pendolo semplice di lunghezza pari alla distanza tra i perni e, a questo punto, è possibile calcolare l'accelerazione di gravità.",
@@ -13,6 +14,7 @@
   {
     "id": "generatore-di-van-de-graaff.html",
     "title": "Generatore di Van de Graaff",
+    "subtitle": "Il generatore di Van De Graaf è un generatore elettrostatico, ideato dal fisico statunitense Robert Jemison Van de Graaff (1901-1967), che permette di accumilare un elevata quantità di carica elettrostatica.",
     "image": "generororedivandegraaff.jpg",
     "datation": "1929",
     "description": "è un generatore elettrostatico, ideato dal fisico statunitense Robert Jemison Van de Graaff (1901-1967), che permette di accumilare un elevata quantità di carica elettrostatica. è formato da un nastro di materiale isolante teso tra due rulli e mantenuto in rotazione da un motore. il nastro viene caricato per induzione da una serie di punte metalliche poste in prossimità del rullo inferiore e collegate ad un generatore di tensione continua ( ad esempio una batteria). queste cariche vengono poi trasportate, per azione del motore che muove il nastro, all'interno di conduttore di forma sferica , isolato, dove un secondo pettina metallico, collegato elettricamentre alla sfera, le trasferisce sulla superficie di quest'ultima.",
@@ -24,6 +26,7 @@
  {
     "id": "apparecchio-composizione-forze.html",
     "title": "Apparecchio composizione delle forze",
+   "subtitle": "apparecchio costituito  da una lavangna riportante alle estremità due carrucole.",
     "image": "apparecchioforze.jpg",
     "datation": "Primo quarto XX secolo",
     "description": "Questo apparecchio è costituito  da una lavangna riportante alle estremità due carrucole, di diversa altezza. è anche corredato di pesi dotati di gancetti. Esso serve a verificare la regola del parallelogramma per la somma dei vettori facendo scorrere nelle gole delle due carrucole un filo con all'estremità dei pesi sospesi spesso equilibrati da altri agganciati al punto medio del filo stesso. Tracciando sulla lavagna in corrispondenza delle due direzioni assunte dal filo due vettori di lunghezza proporzionale al numero dei pesi la diagonale del parallelogramma risulta lunga un numero di unità uguale al numero di pesi agganciati al punto medio del filo. Su di esso agiscono tre forze di diversa direzione ed intensità tenite in equilibrio dalla risultante delle prime due ottenuta con la regola del parallelogramma. Per invece variare l'angolo tra le forze basta variare l'altezza delle colonnine su cui poggiano le carrucole. ",
@@ -31,5 +34,151 @@
     "keyword" : "parola chiave",
     "collocation" : 5,
     "bibliography" : "bibliografia"
-  }
+  },
+{
+    "id": "le-4-bottiglie-di-leida.html",
+    "title": "Le 4 bottiglie di Leida",
+  "subtitle": "4 condensatori cilindrici",
+    "image": "le4bottigledileida.jpg",
+    "datation": "18° secolo, intorno agli anni 40",
+    "description": " Lo stumento è costituito sostanzialmente da 4 condensatori cilindrici formati da 4 bottigle di vetro rivestite di alluminio esternamente e internamente. L'armatura interna è collegata ad un asta metallica che esce dal collo e si unisce ad un'altra asta orizzontale che collega le 4 bottigle. Infine anche nella parte in basso sono connesse da un'asta di alluminio orizzontale. ",
+    "material" : "alluminio, vetro, metallo",
+    "keyword" : "parola chiave",
+    "collocation" : 4,
+    "bibliography" : "bibliografia"
+  },
+{
+  "id": "lente-di-praffina.html",
+  "title": "Lente di paraffina",
+  "subtitle": "miscela di idrocarburi solidi, in prevalenza alcani, le cui molecole presentano catene con più di 20 atomi di carbonio. È ricavata dal petrolio e si presenta come una massa cerosa, biancastra, insolubile in acqua e negli acidi.",
+  "image": "lenteparaffina.jpg",
+  "datation": "Seconda metà XX secolo",
+  "description": "Lo strumento è formato da una lente di paraffina, formata da una miscela di idrocarburi. Questa lente è fissata in un supporto di compensato con fermi di plastica su un supporto in metallo. ",
+  "material" : "metallo, paraffina e compensato",
+  "keyword" : "parola chiave",
+  "collocation" :3,
+  "bibliography" : "https://collections.st-andrews.ac.uk/item/microwave-lens-made-of-wax/1004933".
+},
+
+{
+  "id": "macchina-di-wimshurst.html",
+  "title": "Macchina di Wimshurst",
+  "subtitle": "La macchina di Wimshurst è un generatore elettrostatico per generare alte tensioni, sviluppato nel 1882 dall'inventore britannico James Wimshurst.",
+  "image": "macchinadiwimshurst.jpg",
+  "datation": "1882",
+  "description": "Questo tipo di macchina è stato ideato dall’ingegnere inglese James Wimshurst (1832-1903), ed è in grado di produrre una elevata differenza di potenziale che può raggiungere alcune centinaia di migliaia di volt. La macchina elettrostatica di Wimshurst è costituita da due dischi (con spessore di 2 mm e diametro di 36 cm) realizzati in materiale plastico, ottimo come isolante elettrico. Tali dischi sono montati su un supporto in modo coassiale e a breve distanza tra loro; se azionati mediante manovella ruotano in opposte direzioni grazie all’ausilio di pulegge. Sulle superfici esterne di entrambi i dischi sono presenti 30 settori metallici sottili di forma rettangolare per ciascuno in modo da avere i cosiddetti settori opposti. Su dei supporti sono poste delle spazzole dai crini metallici, chiamate barre neutralizzatrici, necessarie per la realizzazione di contatti striscianti tra i settori opposti. Azionando la manovella mediante pulegge, i due dischi ruotano in antefase e, sfregando contro le spazzole, immagazzinano sulle loro superfici delle cariche di opposta polarità. Ogni volta che un settore entra in contatto con una spazzola, la sua carica cambia da positiva a negativa o viceversa, il risultato è che i settori si caricano positivamente su una metà del disco e negativamente sull’altra. La carica statica sulle spazzole viene raccolta da collettori ed impiegata per polarizzare le armature di un condensatore. Collegando alle due armature uno spinterometro, costituito da due elettrodi di forma sferica, si riescono a provocare delle scariche elettriche. Le sfere infatti creano un forte campo elettrico intorno a loro: quella del polo negativo facilita l'emissione di elettroni che ionizzano l'aria circostante, la sfera positiva fa si che quest'ultima sia in grado di far scoccare le scintille. ",
+  "material" : "legno,vetro,materiale plastico,metallo",
+  "keyword" : "parola chiave",
+  "collocation" : 4,
+  "bibliography" :"https://www.lombardiabeniculturali.it/scienza-tecnologia/schede/4v020-00038" .
+},
+{
+  "id": "doppio-cono-su-piano-inclinato.html",
+  "title": "Doppio cono su piano inclinato",
+  "subtitle": "l’apparecchio viene indicato come “paradosso meccanico”.",
+  "image": "doppioconosupianoinclinato.jpg",
+  "datation": "secondo quarto XX secolo",
+  "description": "Lo strumento é costituito da un doppio cono a base comune. Le sue estremità (costituite da piccole sfere) poggiano sulle guide divergenti di un piano inclinato. Se si pone il doppio cono nella parte più bassa del telaio, esso inizia spontaneamente a salire verso l’alto, dando l’impressione di sottrarsi alla legge della Forza di gravità. In posizione iniziale il baricentro è sollevato da terra; rotolando verso l’alto, a causa della pendenza delle due braccia, si appoggia su una circonferenza (posta ai vertici del doppio cono) sempre più piccola e in questo modo il baricentro si abbassa. Per questo comportamento contrario al senso comune, l’apparecchio viene indicato come “paradosso meccanico”. ",
+  "material" : "legno,metallo.",
+  "keyword" : "parola chiave",
+  "collocation" : 1,
+  "bibliography" : "Istituto e Museo di storia della scienza (Firenze), Museo di storia della scienza: catalogo, a cura di Mara Miniati, Firenze, Giunti, 1991, p. 292, scheda n. 6, ISBN 88-09-20036-5.".
+},
+  {
+    "id": "diapason.html",
+    "title": "Diapason",
+    "subtitle": "strumento costituito da un'asta, generalmente di acciaio,piegata a formare due rebbi e sorretta da uno stelo,creando una forma a U.",
+    "image": "diapason.jpg",
+    "datation": "1711",
+    "description": " Il diapason è uno strumento costituito da un'asta, generalmente di acciaio, piegata a formare due rebbi e sorretta da uno stelo, creando una forma a U. È uno strumento utilizzato come riferimento per l’accordatura degli strumenti musicali. Quando viene eccitato, il diapason emette un suono di altezza determinata dalle sue caratteristiche geometriche, infatti, la frequenza alla quale il diapason oscilla dipende dalle proprietà elastiche del materiale di cui è costituito, dalla lunghezza e dalla distanza fra i rami della forcella. Il diapason è essenzialmente un vibratore trasversale. L’ampiezza della vibrazione longitudinale all'estremo dello stelo è piccola in confronto all'ampiezza delle vibrazioni trasversali all'estremo dei rebbi. Pertanto, quando lo stelo del diapason è fissato su una tavola armonica o su una cassetta risonante, le vibrazioni persistono per lungo tempo. Queste sue caratteristiche permettono al diapason di essere un elemento fondamentale nella pratica musicale. ",
+    "material" : "acciaio",
+    "keyword" : "parola chiave",
+    "collocation" : 6,
+    "bibliography" : "bibliografia"
+  },
+  {
+   "id": "apparecchio-di-hope.html",
+    "title": "Apparecchio di Hope",
+    "subtitle": "permette di dare una dimostrazione del comportamento anomalo dell’acqua.",
+    "image": "apparecchiodihope.jpg",
+    "datation": "secondo quarto XX secolo",
+    "description": "Questo apparecchio, ideato dal chimico scozzese Thomas Charles Hope, permette di dare una dimostrazione del comportamento anomalo dell’acqua, il cui volume, a differenza degli altri liquidi, aumenta man mano che la temperatura diminuisce tra 4° e 0° C. L’acqua infatti raggiunge il suo valore massimo di densità proprio a 4°C. Lo strumento è composto da un recipiente in stagno al centro del quale è fissato un vaso cilindrico in vetro. All’interno del vaso vengono inseriti due termometri. Il vaso viene riempito di acqua a temperatura ambiente, mentre all’interno del recipiente in stagno viene messa una mistura di ghiaccio e sale. La temperatura segnata dal termometro inferiore inizia rapidamente ad abbassarsi mentre la temperatura del termometro superiore rimane la stessa: questo accade perché l’acqua più fredda scende verso il basso a causa della maggiore densità. Quando il termometro inferiore raggiunge la temperatura di 4°C, questa rimane la stessa finché la temperatura del termometro superiore non scende tra i 4° e gli 0°C: a questo punto l’acqua, dilatandosi, diventa meno densa e quindi sale verso l’alto. ",
+    "material" : "vetro e ottone.",
+    "keyword" : "parola chiave",
+    "collocation" : 2,
+    "bibliography" : "Michell J. Sieko, Robert A. Plane chimica, principi e proprietà",
+  },
+  {
+    "id": "ruota-di-newton.html",
+    "title": "Ruota di Newton",
+    "subtitle": "La ruota di Newton è un esempio classico di esperimento scientifico semplice ma molto efficace per spiegare concetti fondamentali di ottica e fisica.",
+    "image": "ruotadinewton.jpg",
+    "datation": "1672",
+    "description": " La ruota di Newton, o disco di Newton, è un dispositivo ottico ideato da Isaac Newton per dimostrare che la luce bianca è composta da una combinazione di colori. Ecco una descrizione del funzionamento e della struttura di questo strumento: la ruota di Newton è costituita da un disco suddiviso in sette settori, ciascuno colorato con uno dei colori dell'arcobaleno (rosso, arancione, giallo, verde, blu, indaco e violetto). Quando il disco viene fatto ruotare rapidamente, i colori si mescolano a causa della persistenza della visione, l'occhio umano percepisce una singola tonalità che appare bianca o grigia. Questo effetto dimostra che la luce bianca è composta da tutti i colori dello spettro visibile. La ruota di Newton serve a illustrare il fenomeno della sintesi additiva dei colori. La sintesi additiva è il processo per cui la combinazione di luci di vari colori produce un altro colore e, in questo caso specifico, la combinazione di tutti i colori dello spettro produce la luce bianca. La ruota di Newton è un esempio classico di esperimento scientifico semplice ma molto efficace per spiegare concetti fondamentali di ottica e fisica. ",
+    "material" : "legno, ferro, carta",
+    "keyword" : "parola chiave",
+    "collocation" : 3,
+    "bibliography" : "bibliografia"
+  },
+  {
+    "id": "barometro-di-fortin.html",
+    "title": "Barometro di Fortin",
+    "subtitle": "è un barometro a mercurio che permette di determinare la pressione atmosferica misurando la pressione esercitata da una colonna di mercurio che fa equilibrio alla pressione atmosferica stessa.",
+    "image": "baroemtrodifortin.jpg",
+    "datation": "Secolo XX",
+    "description": "il barometro di Fortin è un barometro a mercurio che permette di determinare la pressione atmosferica misurando la pressione esercitata da una colonna di mercurio che fa equilibrio alla pressione atmosferica stessa. esso è costituito da una canna di vetro lunga circa 1 m che pesca in una vaschetta in vetro ed in mercurio il cui livello è variabile per mezzo di una vite. C’è inoltre una scala graduata che permette di vedere il livello del mercurio. Affinché le letture dello strumento siano corrette occorre infatti che il livello del mercurio nella vaschetta sia all’altezza di una punta d’avorio, che è fissata alla base superiore della vaschetta che corrisponde allo zero della scala barometrica.proprio a questo serve la vite posta sulla base inferiore della vaschetta. ",
+    "material" : "metallo,legno e vetro",
+    "keyword" : "parola chiave",
+    "collocation" :7,
+    "bibliography" : " http://museocrescenzipacinotti.altervista.org/dati-scheda.asp@id=60.html".
+  },
+  {
+    "id": "polarimetro-ottico.html",
+    "title": "Polarimetro ottico",
+    "subtitle": "Musura il potere rotatorio di una soluzione attraverso un fascio di luce polarizzata.",
+    "image": "polarimetroottico.jpg",
+    "datation": "1864",
+    "description": " Apparecchio ottico costituito da una base con treppiede che sostiene il tubo porta campione, alle cui estremità si collocano da un lato il filtro polarizzatore e dell'altro l'analizzatore con una scala graduata che permette di quantificare l'angolo di rotazione. Musura il potere rotatorio di una soluzione attraverso un fascio di luce polarizzata. ",
+    "material" : "metallo, vetro",
+    "keyword" : "parola chiave",
+    "collocation" : 3,
+    "bibliography" : "bibliografia"
+  },
+  {
+    "id": "emisferi-di-magdeburgo.html",
+    "title": "Emisferi di Magdeburgo",
+    "subtitle": "Gli emisferi di Magdeburgo sono un dispositivo sperimentale atto a dimostrare l'esistenza del vuoto e gli effetti della pressione atmosferica.",
+    "image": "emisferidimagdeburgo.jpg",
+    "datation": "1650",
+    "description": " Gli emisferi di Magdeburgo sono un dispositivo sperimentale atto a dimostrare l'esistenza del vuoto e gli effetti della pressione atmosferica. Lo strumento è composto da due emisferi di metallo (ottone) che aderiscono perfettamente l’uno all’altro grazie ad una guarnizione di gomma che garantisce il perfetto contatto impedendo lo scambio di aria tra l’intero e l’esterno dello strumento. Nell’emisfero inferiore è presente un rubinetto che permette la fase di aspirazione, attraverso una pompa di aspirazione, e la fase dell’isolamento, attraverso la chiusura del rubinetto. L’emisfero superiore presenta un gancio per permettere una presa comoda. Grazie all’utilizzo della pompa viene aspirata l’aria all’interno dello strumento e, dopo aver lasciato lavorare la pompa per qualche secondo, si constata che è impossibile separare i due emisferi. Permettendo all’aria di rientrare i due emisferi si separano nuovamente. Lo strumento permette di valutare e quantificare la forza della pressione dell’aria che viene attuata su qualsiasi superficie. ",
+    "material" : "ottone",
+    "keyword" : "parola chiave",
+    "collocation" : 8,
+    "bibliography" : "bibliografia"
+  },
+  {
+    "id": "prisma-acromatico.html",
+    "title": "Prisma acromatico",
+    "subtitle": "Per non far disperdere la luce",
+    "image": "prismaacromatico.jpg",
+    "datation": "1864",
+    "description": " Sono due prismi isosceli di vetri diversi (flint e crown) i cui vertice sono tagliati. Il verto flint è una tipologia di vetro contenente un’alta percentuale di PbO e con un indice di rifrazione particolarmente alto. Il vetro crown è caratterizzato dalla presenza di silice e di ossidi di calcio e sodio con un basso indice di rifrazione e bassa dispersione. La loro apertura è rispettivamente di 16° per il prisma in crown e 8° per quello in flint. Questi due prismi possono ruotare su due assi paralleli verticali e sono regolabili in altezza. All’intero di questi prismi viene fatto passere un fascio di luce bianca. Se regolati correttamente si formerà un sistema acromatico, cioè, un sistema ottico che devia ma non scompone il fascio di luce. Il fenomeno mostra come si può risolvere il problema dell’aberrazione cromatica delle lenti utilizzando in una stessa lente materiali con indici di rifrazione diversi. ",
+    "material" : "legno, ottone, vetro",
+    "keyword" : "parola chiave",
+    "collocation" : 3,
+    "bibliography" : "bibliografia"
+  },
+  {
+    "id": "specchi-di-fresnel.html",
+    "title": "Specchi di Fresnel",
+    "subtitle": "Gli specchi di Fresnel rappresentano un importante progresso nella tecnologia ottica, permettendo di migliorare significativamente le prestazioni dei dispositivi che li utilizzano e trovando applicazioni in numerosi settori industriali e scientifici.",
+    "image": "specchidifresnel.jpg",
+    "datation": "1827",
+    "description": " Gli specchi di Fresnel sono dispositivi ottici ideati da Augustin-Jean Fresnel per sfruttare le proprietà della luce e migliorare l'efficienza degli strumenti ottici. Ecco una descrizione dettagliata del loro funzionamento e struttura: gli specchi di Fresnel sono composti da una serie di segmenti riflettenti disposti a diverse angolazioni. A differenza degli specchi tradizionali, che sono superfici continue, gli specchi di Fresnel sono suddivisi in anelli concentrici o segmenti piani disposti su una superficie curva. Ogni segmento dello specchio di Fresnel è inclinato in modo tale da riflettere la luce verso un punto specifico. Questo design permette di controllare e indirizzare i raggi luminosi in modo più preciso rispetto agli specchi tradizionali. Gli specchi di Fresnel possono concentrare la luce in un punto focale, migliorando l'efficienza di riflessione e riducendo la quantità di materiale necessario per la costruzione dello specchio. Gli specchi di Fresnel sono utilizzati in vari campi. Una delle applicazioni più comuni è nei fari marittimi, dove vengono utilizzati per concentrare e direzionare il fascio di luce per aumentarne la visibilità a lunga distanza. Altre applicazioni includono telescopi, proiettori, e sistemi di illuminazione solare, dove è necessario concentrare e direzionare la luce in modo efficiente. Inoltre rappresentano un importante progresso nella tecnologia ottica, permettendo di migliorare significativamente le prestazioni dei dispositivi che li utilizzano e trovando applicazioni in numerosi settori industriali e scientifici. ",
+    "material" : "ferro, verto",
+    "keyword" : "parola chiave",
+    "collocation" : 3,
+    "bibliography" : "bibliografia"
+  },
 ]
+

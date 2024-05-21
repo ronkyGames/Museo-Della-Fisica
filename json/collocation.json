@@ -19,4 +19,15 @@
     "id":5,
     "name":"Statica"
   },
-]
+  {
+    "id":6,
+    "name":"Acustica"
+  },
+  {
+    "id":7,
+    "name":"Fluidodinamica"
+  },
+  {
+    "id":8,
+    "name":"Dinamica"
+  },
