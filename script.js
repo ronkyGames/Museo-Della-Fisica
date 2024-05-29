@@ -1,6 +1,6 @@
 const href = window.location.href
 const path = window.location.pathname
-const homePage = href.replace(path, "/")
+const homePage = "http://localhost/scuola/museo-della-fisica/"
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
 
 async function getJson(url) {

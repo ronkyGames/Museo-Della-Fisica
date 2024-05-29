@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <!-- Web application title (used when the page is pinned to homescreen) -->
-  <meta name="application-name" content="My Web App">
+  <meta name="application-name" content="Museo della fisica">
 
   <!-- iOS web app specific tags -->
   <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Allows web app to run in full-screen -->
@@ -20,27 +20,26 @@
 
   <!-- Add to home screen for Chrome on Android -->
   <meta name="theme-color" content="#E6E6E6"> <!-- Color for the browser address bar and the multitasker -->
-  <link rel="manifest" href="json/manifest.json"> <!-- Link to the Web App Manifest -->
+  <link rel="manifest" href="manifest.json"> <!-- Link to the Web App Manifest -->
   <title>"Museo della fisica"</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
   <!-- end google fonts -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
 </head>
 
 <body>
   <!-----------------------------Header------------------------------->
-  <header>
-    <img src="images/mummia.jpg" alt="logo">
+  <header id="logoHeader">
+    <div id="logo"><img src="images/logo.png" alt="logo" /></div>
     <div id="title">
-    <h1>Museo della fisica</h1>
-    <h2>descrizione breve</h2>
+      <h1>Museo della fisica</h1>
+      <h2>descrizione breve</h2>
     </div>
-    <div id="folderStructure"></div>
   </header>
-  <!-- Inserire un menu con elenco: Home, Contacts, About Me -->
   <nav  class="menu">
   <ul>
     <li><a href="">Meccanica</a></li>
@@ -55,48 +54,21 @@
   </nav>
   <!-----------------------------Main------------------------------->
   <main>
-    <!-----------------------------Aside---------------------------->
-    <!-----------------------------Article 1------------------------>
-  <article>
     <header>
       <!-- Titolo -->
-  <h1 id="title">Lorem Ipsum</h1>
-  <!-- Sottotitolo -->
-  <h2 id="subtitle">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
+      <h1 id="title">I nostri strumenti:</h1>
     </header>
-  <!-- corpo del testo -->
-  
-    <div id="strum">
-      <img id="strum.jpg"src="images/instruments/generatoredivandegraaff.jpg">
-  <h1>Generatore di Van De Graaf:</h1>
-  <p>Il generatore di Van De Graaf è un generatore elettrostatico, ideato dal fisico statunitense Robert Jemison Van de Graaff (1901-1967), che permette di accumilare un elevata quantità di carica elettrostatica.
-<a href="generatore-di-van-de-graaff.html"
-  target="_blank">Clicca qui</a>
-  </p>
-    </div>
-    
-    
- <div id="strum">
-   <img id="strum.jpg" src="images/instruments/pendolodikater.jpg">
-<h1>Grande pendolo di Kater:</h1>
-<p>Il pendolo di Kater è un pendolo reversibile a libera oscillazione ideato nel 1817 dal geodeta britannico Henry Kater.
-      <a href="grande-pendolo-di-kater.html"
-        target="_blank">Clicca qui</a>
-        </p>
-   
- </div>
-       <div id="strum">
-         <img id="strum.jpg"src="images/instruments/apparecchioforze.jpg">
-     <h1>Apparecchio composizione delle forze:</h1>
-     <p>L'apparecchio è costituito  da una lavangna riportante alle estremità due carrucole.
-   <a href="apparecchio-composizione-forze.html"
-     target="_blank">Clicca qui</a>
-     </p>
-    </div>
+    <!-----------------------------Article 1------------------------>
+  <article id="strum">
+    <div id="strumDescription">    
+      <img src="images/instruments/generatoredivandegraaff.jpg">
+      <h1>Generatore di Van De Graaf:</h1>
+      <p>Il generatore di Van De Graaf è un generatore elettrostatico, ideato dal fisico statunitense Robert Jemison Van de Graaff (1901-1967), che permette di accumilare un elevata quantità di carica elettrostatica.</p>
+      </div>
+    <nav id="strumNav"><a href="generatore-di-van-de-graaff.html">Clicca qui</a></nav>
   </article>
-  </main> 
-  <!-- fine corpo-->
-  <script src="script.js"></script>
+    
+</main> 
 <!-----------------------------Footer------------------------------->
   <footer>
     <p><!-- copyright symbol-->

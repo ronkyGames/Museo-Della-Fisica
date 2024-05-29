@@ -57,7 +57,7 @@
   "material" : "metallo, paraffina e compensato",
   "keyword" : "parola chiave",
   "collocation" :3,
-  "bibliography" : "https://collections.st-andrews.ac.uk/item/microwave-lens-made-of-wax/1004933".
+  "bibliography" : "https://collections.st-andrews.ac.uk/item/microwave-lens-made-of-wax/1004933"
 },
 
 {
@@ -70,7 +70,7 @@
   "material" : "legno,vetro,materiale plastico,metallo",
   "keyword" : "parola chiave",
   "collocation" : 4,
-  "bibliography" :"https://www.lombardiabeniculturali.it/scienza-tecnologia/schede/4v020-00038" .
+  "bibliography" :"https://www.lombardiabeniculturali.it/scienza-tecnologia/schede/4v020-00038" 
 },
 {
   "id": "doppio-cono-su-piano-inclinato.html",
@@ -82,7 +82,7 @@
   "material" : "legno,metallo.",
   "keyword" : "parola chiave",
   "collocation" : 1,
-  "bibliography" : "Istituto e Museo di storia della scienza (Firenze), Museo di storia della scienza: catalogo, a cura di Mara Miniati, Firenze, Giunti, 1991, p. 292, scheda n. 6, ISBN 88-09-20036-5.".
+  "bibliography" : "Istituto e Museo di storia della scienza (Firenze), Museo di storia della scienza: catalogo, a cura di Mara Miniati, Firenze, Giunti, 1991, p. 292, scheda n. 6, ISBN 88-09-20036-5."
 },
   {
     "id": "diapason.html",
@@ -106,7 +106,7 @@
     "material" : "vetro e ottone.",
     "keyword" : "parola chiave",
     "collocation" : 2,
-    "bibliography" : "Michell J. Sieko, Robert A. Plane chimica, principi e proprietà",
+    "bibliography" : "Michell J. Sieko, Robert A. Plane chimica, principi e proprietà"
   },
   {
     "id": "ruota-di-newton.html",
@@ -130,7 +130,7 @@
     "material" : "metallo,legno e vetro",
     "keyword" : "parola chiave",
     "collocation" :7,
-    "bibliography" : " http://museocrescenzipacinotti.altervista.org/dati-scheda.asp@id=60.html".
+    "bibliography" : " http://museocrescenzipacinotti.altervista.org/dati-scheda.asp@id=60.html"
   },
   {
     "id": "polarimetro-ottico.html",
@@ -179,6 +179,6 @@
     "keyword" : "parola chiave",
     "collocation" : 3,
     "bibliography" : "bibliografia"
-  },
+  }
 ]
 
