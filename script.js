@@ -3,6 +3,18 @@ const path = window.location.pathname
 const homePage = "http://localhost/scuola/museo-della-fisica/"
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
 
+function instrumentPreview(id,image,title,description){
+  const htmlCode = `<article id="strum">
+                      <div id="strumDescription">    
+                        <img src="images/instruments/${image}">
+                        <h1>${title}</h1>
+                        <p>${description}</p>
+                      </div>
+                      <nav id="strumNav"><a href="${homePage}?instrument=${id}">Vai allo Strumento</a></nav>
+                    </article>`
+  return htmlCode
+}
+
 async function getJson(url) {
   try {
     const response = await fetch(url)
