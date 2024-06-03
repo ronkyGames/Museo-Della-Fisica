@@ -4,9 +4,12 @@ html {
 body{
   display:flex;
   flex-direction: column;
+  /* minimum heigh: 100% of the viewport */
+  min-height: 100vh;
 }
 
-header{
+#logoheader{
+  flex:1;
   display:flex;
   flex-direction: row;
   color: #00215E;
@@ -17,13 +20,10 @@ header{
   margin-right:2rem;
 }
 
-#logo  img{
+#logo img{
   margin: 0 auto;
-  width:5rem;
-}
-
-#title{
-  flex : 2;
+  width:80%;
+  height: auto;
 }
 
 h1,h2{
@@ -65,8 +65,10 @@ p{
 }
 /* main */
 main{
+  flex:5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* article */
@@ -107,7 +109,8 @@ article p{
 
 #strumImg img{
   margin: 0 auto;
-  height: 50%;
+  height: 90%;
+  width: auto;
   margin-right:1rem;
 }
 

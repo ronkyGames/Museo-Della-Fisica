@@ -3,18 +3,6 @@ const path = window.location.pathname
 const homePage = "http://localhost/scuola/museo-della-fisica/"
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
 
-function instrumentPreview(id,image,title,description){
-  const htmlCode = `<article id="strum">
-                      <div id="strumDescription">    
-                        <img src="images/instruments/${image}">
-                        <h1>${title}</h1>
-                        <p>${description}</p>
-                      </div>
-                      <nav id="strumNav"><a href="${homePage}?instrument=${id}">Vai allo Strumento</a></nav>
-                    </article>`
-  return htmlCode
-}
-
 async function getJson(url) {
   try {
     const response = await fetch(url)
@@ -23,6 +11,11 @@ async function getJson(url) {
   } catch (error) {
     console.error('Fetching error:', error)
   }
+}
+
+async function getInstruments(){
+  const data = await getJson(`${homePage}json/instruments.json`)
+  return data
 }
 
 async function getDataById(url,id){
@@ -87,3 +80,80 @@ fetch(`${homePage}json/instruments.json`).then(response =>{
   }
   }
 })
+
+// page functions
+function instrumentPreview(doc){
+  const id = doc.id
+  const image = doc.image
+  const title = doc.title
+  const description = doc.subtitle
+  const htmlCode = `<article id="strum">
+                      <div id="strumDescription">    
+                        <img src="images/instruments/${image}">
+                        <div>
+                          <h1>${title}</h1>
+                          <p>${description}</p>
+                        </div>
+                      </div>
+                      <nav id="strumNav"><a href="${homePage}?instrument=${id}">Vai allo Strumento</a></nav>
+                    </article>`
+  return htmlCode
+}
+
+function instrumentPage(doc){
+  const title = doc.title
+  const image = `${homePage}images/instruments/${doc.image}`
+  const datation = doc.datation
+  const description = doc.description
+  const material = doc.material
+  const keyword = doc.keyword
+  const collocation = doc.collocation
+  const bibliography = doc.bibliography
+
+  let htmlCode = `<article>
+                      <header>
+                        <h1 id="title">${title}</h1>
+                      </header>
+                      <!-----------------------------End Header------------------------>
+                      <!-- Image -->
+                      <div id="image">
+                        <img src="${image}" alt="${keyword}">
+                      </div>
+                      <!-- datation -->
+                      <div id="datation">
+                        <p>${datation}</p>
+                      </div>
+                      <!-- main content -->
+                      <div id="description">
+                        <p>${description}</p>
+                      </div>
+                      <!-- material -->
+                      <div id="material">
+                        <p>${material}</p>
+                      </div>
+                      <!-- collocation -->
+                      <div id="collocation">
+                        <p>${collocation}</p>
+                      </div>`
+                  
+  htmlCode += `<!-- bibliografy -->
+                      <div id="bibliography">
+                        <p>${bibliography}</p>
+                      </div>`
+  htmlCode += `</article>`
+  return htmlCode
+}
+
+async function home(){
+  const main = document.getElementsByTagName('main')[0]
+  const data = await getInstruments()
+  
+  let htmlCode = ``
+  data.forEach(doc => {
+      htmlCode += instrumentPreview(doc)
+  })
+  console.log(htmlCode)
+  main.innerHTML = htmlCode
+}
+
+document.addEventListener('DOMContentLoaded',home)

@@ -4,6 +4,13 @@ html {
     color: #00215E;
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
 h1,h2{
     font-family:'Quando';
 }
@@ -12,20 +19,51 @@ p{
     text-align: justify;
 }
 
+/* logo header */
+#logoHeader{
+    flex:1;
+    display:flex;
+    flex-direction: row;
+    color: #00215E;
+  }
+  
+  #logo{
+    flex : 1;
+    margin-right:1.2rem;
+    /* center children tags*/
+    display:flex;
+    justify-content: center; /* Horizzontally */
+    align-items: center; /* vertically */
+  }
+
+  #logoTitle{
+    flex : 5;
+  }
+  
+  #logo img{
+    margin: 0 auto;
+    width:80%;
+    height: auto;
+  }
+
 /* main menu */
 .menu{
+    height: auto;
     background-color: #00215E;
-    overflow: hidden;
+    overflow-x: auto;
     top:0;
     width:100%;
+    display: flex;
+    align-items: center;
 }
 .menu ul, aside ul{
     margin:0;
     padding: 0;
     list-style-type: none;
+    white-space: nowrap;
 }
 .menu li{
-    float: left;
+    display: inline-block;
 }
   
 .menu li a{
@@ -43,31 +81,18 @@ p{
 
 /* main */
 main{
+    padding-top: 1rem;
+    height: 55.56vh;
+
     display: flex;
     flex-direction: column;
-  }
+    align-items: center;
 
-main header{
-    flex:1;
-    border-bottom: 1px solid #00215E;
-    margin-bottom: 1rem;
-  }
-main header h1{
-    font-size: 1.3rem;
-    padding: 0;
-    margin-bottom: 1rem;
-    margin-left: 0.8rem;
-  }
-main header h2{
-    font-size: 1.2rem;
-    padding: 0;
-    margin-bottom: 1rem;
+    /* set vertical flow */
+    overflow-y: auto ;
   }
 
 /* article */
-article{
-    flex: 3;
-  }
 article p{
     font-size: 1.2;
     padding:0;
@@ -76,9 +101,12 @@ article p{
 
 /* footer */
 footer{
+    height:10vh;
     background-color: #00215E;
     color:#EEFFFF;
     padding: 0.5em;
+    display: flex;
+    align-items: center;
 }
 
 footer a{
@@ -89,27 +117,33 @@ footer a{
 /* instruments flow */
 #strum{
     width:85%;
-    margin:auto;
     margin-bottom: 0.5em;
     display: flex;
     flex-direction: column;
+    border-bottom: solid #00215E;
   }
 
 #strumDescription{
     flex:2;
     width:95%;
     margin: auto;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
+    display:flex;
+    align-items: center;
 }
   
 #strumDescription img{
-    margin: 0 auto;
-    width: 30%;
+    width: 3rem;
+    height: auto;
     margin-right:1rem;
-    float:left;
+    margin-left:0.7rem;
 }
-  
 
+#strumDescription div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
   
 #strumDescription h1{
     font-size: 1.2rem;
@@ -122,25 +156,26 @@ footer a{
 }
   
 #strumDescription p{
-    font-size: 0.8em;
+    font-size: 1rem;
     margin-top: 0;
 }
 
 #strumNav{
     flex:1;
     text-align: center;
-    background-color: #00215E;
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
     padding-bottom: 0.5rem;
     width: 100%;
 }
 
 #strumNav a{
-    color: #EEFFFF;
+    color: #00215E;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 
 #strumNav a:hover{
+    font-size: 1rem;
     font-weight: bold;
 }
 
