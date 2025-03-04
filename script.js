@@ -1,7 +1,15 @@
 const href = window.location.href
 const path = window.location.pathname
-const homePage = "http://localhost/scuola/museo-della-fisica/"
+const homePage = "http://localhost/scuola/museo-della-fisica/" //"https://iisbafile.edu.it/webspace/museofisica/"
 const page = path.split('/').pop()=="" ? "index.html" : path.split('/').pop()
+
+// functions 
+function getQueryStringValue(key){
+  const urlParams = new URLSearchParams(window.location.search)
+  return urlParams.get(key)
+}
+
+// Async function to fetch JSON data
 
 async function getJson(url) {
   try {
@@ -15,6 +23,11 @@ async function getJson(url) {
 
 async function getInstruments(){
   const data = await getJson(`${homePage}json/instruments.json`)
+  return data
+}
+
+async function getCollocations(){
+  const data = await getJson(`${homePage}json/collocation.json`)
   return data
 }
 
@@ -42,47 +55,12 @@ async function getCollocation(id){
   return collocation  
 }
 
-getInstrumentsByCollocation(1).then(result=>{
-  for(const element of result){
-    console.log(element)
-  }
-})
-
-
-fetch(`${homePage}json/instruments.json`).then(response =>{
-  if(!response.ok){
-    throw new Error("Errore nella richiesta")
-  }
-  return response.json()
-}).then(data =>{
-  if(page != "index.html"){
-  const doc = data.find(doc => doc.id === page)
-  if(doc){
-    const title = doc.title
-    const image = `${homePage}images/instruments/${doc.image}`
-    const datation = doc.datation
-    const description = doc.description
-    const material = doc.material
-    const keyword = doc.keyword
-    const collocation = doc.collocation
-    document.querySelector("#title").textContent = title
-    document.querySelector("#image").innerHTML = `<img src="${image}" alt="${keyword}">`
-    document.querySelector("#datation").textContent = datation
-    document.querySelector("#description").innerHTML = description
-    document.querySelector("#material").textContent = material
-    getCollocation(collocation).then(result =>{
-      
-      document.querySelector("#collocation").textContent = result.name
-    })
-    
-  }else{
-    document.querySelector("#title").textContent = "Documento non trovato"
-  }
-  }
-})
-
 // page functions
 function instrumentPreview(doc){
+  let link = `${homePage}?instrument=${doc.id}`
+  if(col){
+    link = `${homePage}?instrument=${doc.id}&collocation=${col}`
+  }
   const id = doc.id
   const image = doc.image
   const title = doc.title
@@ -95,12 +73,12 @@ function instrumentPreview(doc){
                           <p>${description}</p>
                         </div>
                       </div>
-                      <nav id="strumNav"><a href="${homePage}?instrument=${id}">Vai allo Strumento</a></nav>
+                      <nav id="strumNav"><a href="${link}">Vai allo Strumento</a></nav>
                     </article>`
   return htmlCode
 }
 
-function instrumentPage(doc){
+function instrumentView(doc,backLink = homePage){
   const title = doc.title
   const image = `${homePage}images/instruments/${doc.image}`
   const datation = doc.datation
@@ -110,10 +88,12 @@ function instrumentPage(doc){
   const collocation = doc.collocation
   const bibliography = doc.bibliography
 
-  let htmlCode = `<article>
+  let htmlCode = `<main id="instrument">
+                    <article>
                       <header>
                         <h1 id="title">${title}</h1>
                       </header>
+                        <a href="${backLink}" class="back-link">🔙</a>
                       <!-----------------------------End Header------------------------>
                       <!-- Image -->
                       <div id="image">
@@ -121,28 +101,33 @@ function instrumentPage(doc){
                       </div>
                       <!-- datation -->
                       <div id="datation">
-                        <p>${datation}</p>
+                        <p><b>DATA</b> ${datation}</p>
                       </div>
                       <!-- main content -->
                       <div id="description">
-                        <p>${description}</p>
+                        <p><b>DESCRIZIONE</b> ${description}</p>
                       </div>
                       <!-- material -->
                       <div id="material">
-                        <p>${material}</p>
+                        <p><b>MATERIALI:</b> ${material}</p>
                       </div>
-                      <!-- collocation -->
-                      <div id="collocation">
-                        <p>${collocation}</p>
-                      </div>`
-                  
-  htmlCode += `<!-- bibliografy -->
+                      `
+  if(bibliography != ""){                
+    htmlCode += `<!-- bibliografy -->
                       <div id="bibliography">
-                        <p>${bibliography}</p>
+                        <p><b>BIBLIOGRAFIA</b> ${bibliography}</p>
                       </div>`
-  htmlCode += `</article>`
+  }
+  htmlCode += `</article>
+              </main>`
   return htmlCode
 }
+
+// page variables
+let instrument = getQueryStringValue('instrument')
+let col = getQueryStringValue('collocation')
+
+// home page
 
 async function home(){
   const main = document.getElementsByTagName('main')[0]
@@ -152,8 +137,53 @@ async function home(){
   data.forEach(doc => {
       htmlCode += instrumentPreview(doc)
   })
-  console.log(htmlCode)
   main.innerHTML = htmlCode
 }
 
-document.addEventListener('DOMContentLoaded',home)
+async function instrumentPage(){
+  let backLink = homePage
+  if(col){
+    backLink = `${homePage}?collocation=${col}`
+  }
+  const body = document.body
+  body.classList.add('bg_gray')
+  const doc = await getDataById(`${homePage}json/instruments.json`,instrument)
+  let htmlCode = instrumentView(doc,backLink)
+  
+  body.innerHTML = htmlCode
+}
+
+async function collocationPage(){
+
+  docs = await getInstrumentsByCollocation(Number(col))
+  const main = document.getElementsByTagName('main')[0]
+  let htmlCode = ``
+  docs.forEach(doc => {
+    htmlCode += instrumentPreview(doc)
+  })
+  main.innerHTML = htmlCode
+}
+
+async function navTag(){
+  const data = await getCollocations()
+  const nav = document.querySelector('.menu')
+  let htmlCode = `<ul>`
+  htmlCode += `<li><a href="${homePage}">HOME</a></li>`
+  data.forEach(doc => {
+    htmlCode += `<li><a href="${homePage}?collocation=${doc.id}">${doc.name.toUpperCase()}</a></li>`
+  })
+  htmlCode += `</ul>`
+  nav.innerHTML = htmlCode
+}
+let backLink = homePage
+// site navigation
+if(instrument){
+  document.addEventListener('DOMContentLoaded',instrumentPage)
+}else if(col){
+  document.addEventListener('DOMContentLoaded',navTag)
+  document.addEventListener('DOMContentLoaded',collocationPage)
+}else{
+  backLink = homePage
+  document.addEventListener('DOMContentLoaded',navTag)
+  document.addEventListener('DOMContentLoaded',home)
+}
