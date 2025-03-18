@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  flex: 3;
+  background-color: #0b2447;
+}
+
+main {
+  flex: 10;
+  background-color: #1c6ca4;
+   /* set vertical flow */
+   overflow-y: auto ;
+}
+
+footer {
+  flex: 1;
+  background-color: #0b2447;
+}
+
+footer p {
+  color: #b2c02a;
+  text-align: center;
+}
+
