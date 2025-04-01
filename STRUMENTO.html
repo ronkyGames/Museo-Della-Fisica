@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Web application title (used when the page is pinned to homescreen) -->
+  <meta name="application-name" content="Museo della fisica">
+
+  <!-- iOS web app specific tags -->
+  <meta name="mobile-web-app-capable" content="yes"> <!-- Allows web app to run in full-screen -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- Sets the status bar appearance -->
+  <meta name="apple-mobile-web-app-title" content="Museo Della Fisica"> <!-- Title for the web app when added to home screen -->
+
+  <!-- Icons (Consider adding icons in various sizes for different devices) -->
+  <link rel="icon" href="images/icon/favicon.ico" sizes="16x16" type="image/ico">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple/120.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple/152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple/180.png"><!-- For iOS devices -->
+
+  <!-- Add to home screen for Chrome on Android -->
+  <meta name="theme-color" content="#E6E6E6"> <!-- Color for the browser address bar and the multitasker -->
+  <link rel="manifest" href="manifest.json"> <!-- Link to the Web App Manifest -->
+  <title>I.I.S. A. Bafile - Museo della fisica</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+  <!-- end google fonts -->
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+ 
+  <!-----------------------------Main------------------------------->
+  
+<main id="instrument">
+                    <article>
+                      <header>
+                        <h1 id="title">${title}</h1>
+                      </header>
+                      <!-----------------------------End Header------------------------>
+                      <!-- Image -->
+                      <div id="image">
+                        <img src="images/instruments/generatoredivandegraaff.jpg" alt="${keyword}">
+                      </div>
+                      <!-- datation -->
+                      <div id="datation">
+                        <p><b>DATA:</b> ${datation}</p>
+                      </div>
+                      <!-- main content -->
+                      <div id="description">
+                        <p><b>DESCRIZIONE:</b> ${description}</p>
+                      </div>
+                      <!-- material -->
+                      <div id="material">
+                        <p><b>MATERIALI:</b> ${material}</p>
+                      </div>
+                      <div id="bibliography">
+                        <p><b>BIBLIOGRAFIA:</b> ${bibliography}</p>
+                      </div>`
+  </article>
+              </main>
+  
+</body>
+
+</html>
